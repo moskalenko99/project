@@ -10,7 +10,7 @@ class Navigation extends React.Component{
         return (
             <nav className="Navigation">
                 <Link className="Navigation__link" to="/">Home</Link>
-                <Link className="Navigation__link" to="/login">Sign in</Link>
+                <Link className="Navigation__link" to="/blog">Blog</Link>
             </nav>
         )
     }

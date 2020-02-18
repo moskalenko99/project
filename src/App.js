@@ -7,7 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import Navigation from './components/Navigation';
-import LoginPage from './pages/LoginPage';
+import BlogPage from './pages/BlogPage';
 import HomePage from './pages/HomePage';
 
 class App extends React.Component {
@@ -19,8 +19,8 @@ class App extends React.Component {
             <Route path="/" exact>
               <HomePage />
             </Route>
-            <Route path="/login">
-              <LoginPage />
+            <Route path="/blog">
+              <BlogPage />
             </Route>
           </Switch>
       </Router>
