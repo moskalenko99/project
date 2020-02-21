@@ -1,15 +1,17 @@
 import React from 'react';
+import {
+  Link
+} from "react-router-dom";
 
 import './styles.scss';
 
 class PostPreview extends React.Component{
-
     render() {
-      const {title, text} = this.props;
+      const {title, index} = this.props;
       return (
         <article>
           <h2>{title}</h2>
-          <p>{text}</p>
+					<Link to={`/blog/${this.props.index}`}>Details</Link>
         </article>
       )
     }
