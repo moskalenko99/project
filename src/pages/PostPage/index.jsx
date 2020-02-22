@@ -1,6 +1,5 @@
 import React from 'react';
 import { withRouter } from "react-router";
-import PostPreview from './../../components/PostPreview';
 
 import './styles.scss';
 

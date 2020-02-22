@@ -21,11 +21,11 @@ class BlogPage extends React.Component{
                 <h1>BlogPage</h1>
                 <section>
                     {this.state.list.map((post, index) => (
-												<PostPreview 
-													title={post.title} 
-													description={post.body}
-													index={index} 
-												/>
+                        <PostPreview 
+                            title={post.title} 
+                            description={post.body}
+                            index={index} 
+                        />
                     ))}
                 </section>
             </React.Fragment>
