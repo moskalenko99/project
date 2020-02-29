@@ -38,4 +38,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+console.log('DEBUG', process.env.DEBUG);
+
 module.exports = app;

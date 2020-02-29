@@ -75,7 +75,8 @@ const config = {
         template: require('html-webpack-template'),
         inject: false,
         appMountId: 'app',
-        filename: 'index.html'
+        filename: 'index.html',
+        base: { 'href': 'http://localhost:8080/' }
       }),
     new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /en/),
     new LodashModuleReplacementPlugin

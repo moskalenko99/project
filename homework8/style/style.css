@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic');
-@import '~bootstrap/scss/bootstrap.scss';
-
-$primary-color: white;
-$bg: black;
-
 *{
     max-width: 100%;
     margin: 0;
@@ -17,7 +11,7 @@ body{
 }
 
 .header{
-    background-image: url("/image/background.png");
+    background-image: url("../image/background.png");
 }
 
 .header__top{
@@ -123,7 +117,7 @@ div.search > a{
 }
 .header__bottom:after {
     content: "";
-    background-image: url(/image/texture.png);
+    background-image: url(../image/texture.png);
     opacity: 0.03;
     top: 0;
     left: 0;
@@ -147,7 +141,7 @@ div.search > a{
 
 .menu:after {
     content: "";
-    background-image: url(/image/texture2.png);
+    background-image: url(../image/texture2.png);
     top: 0;
     left: 0;
     bottom: 0;
@@ -267,12 +261,12 @@ input[type="radio"] + label span {
     width:19px;
     height:19px;
     vertical-align:middle;
-    background:url("/image/print-icon-empty.png") left top no-repeat;
+    background:url("../image/print-icon-empty.png") left top no-repeat;
     cursor:pointer;
 }
 
 input[type="radio"]:checked + label span {
-    background:url("/image/radiobutton-selected.png") left top no-repeat;
+    background:url("../image/radiobutton-selected.png") left top no-repeat;
 }
 
 input[type="radio"]:checked + label {
@@ -296,7 +290,7 @@ input[type="radio"]:checked + label {
 }
 
 footer {
-    background-image: url("/image/background-footer.png");
+    background-image: url("../image/background-footer.png");
     height: 300px;
 }
 
@@ -350,3 +344,4 @@ footer a:hover {
 .footer__link {
     margin-bottom: 7px;
 }
+
