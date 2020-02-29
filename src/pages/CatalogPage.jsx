@@ -6,7 +6,7 @@ const mockedData = [
     id: 0,
     image: 'image/product.png',
     rate: 3,
-    in_stocke: true,
+    in_stock: true,
     title: "Сухой корм Hill's Science Plan Adult Large Breed Lamb & Rice для взрослых собак",
     weights: [
       {
@@ -33,7 +33,18 @@ const mockedData = [
     price: 500,
     sale: 450,
     priceUnit: 'RUB'
+  },
+  {
+    id: 1,
+    image: 'image/product.png',
+    rate: 4,
+    in_stock: false,
+    title: "Сухой корм Hill's Science Plan Adult Large Breed Lamb & Rice для взрослых собак",
+    price: 500,
+    sale: 450,
+    priceUnit: 'RUB'
   }
+
 ];
 
 class CatalogPage extends Component {
