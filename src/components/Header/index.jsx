@@ -19,9 +19,9 @@ class Header extends React.Component {
           <div className="header">
               <div className="header__top">
                   <div className="logo">
-										<Link to="/">
+					<Link to="/">
                       <img src="image/logo-final-1.png" alt="logo" />
-										</Link>
+					</Link>
                   </div>
                   <div className="contacts">
                       <div className="contacts-numder">

@@ -7,6 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import CatalogPage from './pages/CatalogPage';
+import ProductPage from './pages/ProductPage';
 
 class App extends React.Component {
   render() {
@@ -15,6 +16,9 @@ class App extends React.Component {
         <Switch>
           <Route path="/" exact>
             <CatalogPage />
+          </Route>
+          <Route  path="/:id">
+            <ProductPage />
           </Route>
         </Switch>
       </Router>

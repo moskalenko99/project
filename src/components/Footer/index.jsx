@@ -25,13 +25,33 @@ const dog = {
 	collarsLeashesHarnesses: 'Ошейники, поводки и шлейки'
 }
 
+const animals = {
+	rodents: 'Грызуны',
+	fish: 'Рыбы',
+	birds: 'Птицы',
+	farmAnimal: 'Сельхоз животное'
+}
+
+const about = {
+	company: 'О компании',
+	contacts: 'Контакты',
+	delivery: 'Доставка',
+}
+const userInfo = {
+	payment: 'Оплата',
+	cabinet: 'Личный кабинет',
+	stock: 'Акции',
+}
+
 
 class Footer extends React.Component {
 
 	state = {
 		data: data,
 		cat: cat,
-		dog: dog
+		dog: dog,
+		animals: animals,
+		about: about
 	}
 
 	render(){
@@ -57,46 +77,39 @@ class Footer extends React.Component {
 						</div>
 					</div>
 					<div className="footer__nav">
-						{console.log(cat);
-						}
-						{/* <div className="footer__link">
-							<Link to="food-cat">{cat.foodCat}</Link>
-						</div>
-						<div className="footer__link">
-							<Link to="toys-cats">{cat.toysCats}</Link>
-						</div>
-						<div className="footer__link">
-							<Link to="vitamins-cats">{cat.vitaminsCats}</Link>
-						</div>
-						<div className="footer__link">
-							<Link to="claws-cats">{cat.clawsCats}</Link>
-						</div>
-						<div className="footer__link">
-							<Link to="carry-cats">{cat.carryCats}</Link>
-						</div> */}
+						{_.map(cat, (item, index) =>(
+							<div className="footer__link">
+								<Link to={index}>{item}</Link>
+							</div>
+						))}
 					</div>
 					<div className="footer__nav">
-						<div className="footer__link"><a href="#">Корм для собак</a></div>
-						<div className="footer__link"><a href="#">Игрушки для собак</a></div>
-						<div className="footer__link"><a href="#">Витамины для собак</a></div>
-						<div className="footer__link"><a href="#">Кости и лакомства</a></div>
-						<div className="footer__link"><a href="#">Ошейники, поводки и шлейки</a></div>
+						{_.map(dog, (item, index) =>(
+							<div className="footer__link">
+								<Link to={index}>{item}</Link>
+							</div>
+						))}
 					</div>
 					<div className="footer__nav">
-						<div className="footer__link"><a href="#">Грызуны</a></div>
-						<div className="footer__link"><a href="#">Рыбы</a></div>
-						<div className="footer__link"><a href="#">Птицы</a></div>
-						<div className="footer__link"><a href="#">Сельхоз животное</a></div>
+						{_.map(animals, (item, index) =>(
+							<div className="footer__link">
+								<Link to={index}>{item}</Link>
+							</div>
+						))}
 					</div>
 					<div className="footer__nav">
-						<div className="footer__link"><a href="#">О компании</a></div>
-						<div className="footer__link"><a href="#">Контакты</a></div>
-						<div className="footer__link"><a href="#">Доставка</a></div>
+						{_.map(about, (item, index) =>(
+							<div className="footer__link">
+								<Link to={index}>{item}</Link>
+							</div>
+						))}
 					</div>
 					<div className="footer__nav">
-						<div className="footer__link"><a href="#">Оплата</a></div>
-						<div className="footer__link"><a href="#">Личный кабинет</a></div>
-						<div className="footer__link"><a href="#">Акции</a></div>
+						{_.map(userInfo, (item, index) =>(
+							<div className="footer__link">
+								<Link to={index}>{item}</Link>
+							</div>
+						))}
 					</div>
 				</div>
 			</footer>
