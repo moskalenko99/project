@@ -48,9 +48,13 @@ class Product extends React.Component {
 					): (<div class="d-flex align-items-center cost" >
 								<img src="image/cost.png" alt="discount" />
 							</div>)}
+					<Link to={`/${data.id}`}>
 						<div className="btn-buy">
-							<button className="btn"><Link to={`/${data.id}`}>Купить</Link></button>
+							<button className="btn">
+								Купить
+							</button>
 						</div>
+					</Link>
 				</div>
 			</div>
 		);
